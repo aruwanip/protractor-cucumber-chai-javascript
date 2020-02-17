@@ -1,5 +1,6 @@
 # protractor-cucumber-chai-javascript
-Automated UI Testing with Cucumber, Protractor, and Chai\nCode has been modified from https://github.com/mlev/protractor-cucumber-example
+Automated UI Testing with Cucumber, Protractor, and Chai
+Code has been modified from https://github.com/mlev/protractor-cucumber-example
 
 This creates some basic cucumber tests for the Super Calculator application used in the official Protractor tutorial - http://juliemr.github.io/protractor-demo/
 
