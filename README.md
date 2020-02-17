@@ -19,6 +19,14 @@ cd protractor-cucumber-chai-javascript
 npm install
 ```
 
+### First time running
+
+The first time you try running the webdriver, you must run this command. After the first time, you can skip this step.
+
+```
+npm prestart-webdriver
+```
+
 ### Start Webdriver Manager (in one terminal window)
 
 ```

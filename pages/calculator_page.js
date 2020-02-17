@@ -18,11 +18,11 @@ let CalculatorPage = function() {
   };
 
   this.getResult = function() {
-    return element(by.binding('latest')).getText();
+    return element(by.css('body > div > div > form > h2')).getText();
   };
 
   this.clickGo = function() {
-    return element(by.css('#gobutton')).click()
+    return element(by.css('#gobutton')).click();
   }
 };
 
