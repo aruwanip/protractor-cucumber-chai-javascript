@@ -16,21 +16,9 @@ Feature: Arithmetic Operations
     Then the result should equal 17
 
   Scenario: Subtract numbers
-    Given The calculator is open
-    When I calculate 15 - 7
-    Then the result should equal 8
 
   Scenario: Multiply numbers
-    Given The calculator is open
-    When I calculate 10 * 9
-    Then the result should equal 90
 
   Scenario: Divide numbers
-    Given The calculator is open
-    When I calculate 10 / 2
-    Then the result should equal 5
 
   Scenario: Modulo numbers
-    Given The calculator is open
-    When I calculate 26 % 11
-    Then the result should equal 4

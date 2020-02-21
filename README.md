@@ -40,4 +40,6 @@ npm run start-webdriver
 npm run protractor
 ```
 
+## Troubleshooting
 
+Possible causes of the project failing to build/run may be due to your Chrome version. This project requires version 80.

@@ -10,7 +10,7 @@ let CalculatorPage = function() {
   };
 
   this.setRightOperand = function(value) {
-    return element(by.model('second')).sendKeys(value);
+    // TODO
   };
 
   this.setOperator = function(value) {
@@ -18,11 +18,11 @@ let CalculatorPage = function() {
   };
 
   this.getResult = function() {
-    return element(by.css('body > div > div > form > h2')).getText();
+    // TODO
   };
 
   this.clickGo = function() {
-    return element(by.css('#gobutton')).click();
+    // TODO
   }
 };
 
