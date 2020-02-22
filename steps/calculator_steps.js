@@ -9,21 +9,18 @@ let CalculatorSteps = function() {
   };
 
   this.Given('The calculator is open', function () {
-    // Handling asynchronous step definition with Promise return
     return this.page.get();
   });
 
-  this.When('I calculate $first $operator $second', function (first, operator, second, callback) {
-    // Handling asynchronous step definition with callback function
+  this.When('I calculate $first $operator $second', function (first, operator, second) {
     this.page.setLeftOperand(first);
     this.page.setOperator(operator);
     this.page.setRightOperand(second);
-    this.page.clickGo();
-    callback();
+    return this.page.clickGo();
   });
 
-  this.Then('the result should equal $result', function (result, callback) {
-    expect(this.page.getResult()).to.eventually.equal(result).and.notify(callback);
+  this.Then('the result should equal $result', function (result) {
+    return expect(this.page.getResult()).to.eventually.equal(result);
   });
 };
 
